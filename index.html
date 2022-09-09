@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sec" id="home">
+        <header>
+            <a href="./index.html" class="logo"><h1>Talkto<span>Bella</span></h1></a>
+            <div class="nav-links">
+                <div class="toggleMenu" onclick="menuToggle();"></div>
+                <ul class="navigation">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="#what-we-talk-about">WHAT WE TALK ABOUT</a></li> 
+                    <li><a href="#contact" >CONTACT US</a></li>
+                    <li><a href="./index 2.html">JOIN</a></li>
+                    <li> <a href="./index 3.html">LOG IN</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="textbox">
+                <h2>Pour your hearts out<br><span>You are Safe Here</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio unde, <br>consequatur, nulla maxime distinctio placeat dolorum <br>ab tempore dolorem maiores iste
+                </p>
+                <a href="#">Visit us to know more </a>
+            </div>
+        </section>
+
+   
+    <section class="what-we-talk-about" id="what-we-talk-about">
+        <h1>WHAT WE TALK ABOUT</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero vel ratione adipisci sapiente eum asperiores distinctio hic. Quo eos ipsam eius! Nobis, tempora adipisci quasi minima voluptas odit cumque officia.</p>
+      <p class="go-back"><a href="./index.html">Go back to home</a></p>
+    
+        <div class="row">
+            <div class="course-col">
+                <h3>School</h3>
+                <p>Lorem ipsum dolor,  molestiae accusantium esse odio molestias! Magni, fugiat placeat.</p>
+            </div>
+        <div class="course-col">
+            <h3>Relationship</h3>
+            <p>Lorem ipsum dolor,  molestiae accusantium esse odio molestias! Magni, fugiat placeat.</p>
+        </div>
+    <div class="course-col">
+        <h3>Music</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. accusantium esse odio molestias! Magni, fugiat placeat.</p>
+    </div>
+</div>
+    </section>
+   
+
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="container-left">
+            <h2>CONTACT US</h2>
+
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+        
+        
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="Talk to Us" cols="30" rows="10"></textarea>
+                
+                <button type="submit" class="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="container-right">
+            <ul class="sci"> 
+                <li><a href="#"><img src="facebook.png"></a></li>
+                <li><a href="https://twitter.com/AkinwandeSarah"><img src="twitter.png"></a></li>
+                <li><a href=""><img src="instagram.png"></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        function menuToggle(){
+            const toggleMenu = document.querySelector('.toggleMenu');
+            const navigation = document.querySelector('.navigation'); 
+            toggleMenu.classList.toggle('active');
+            navigation.classList.toggle('active'); 
+        }
+    </script>
+
+</body>
+</html>
